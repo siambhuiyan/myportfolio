@@ -128,9 +128,10 @@
 					<header class="major">
 						<h2>Intrested in working together? Let's have a talk.</h2>
 					</header>
-					<form  action="https://formspree.io/f/mjvpolwj" method="post" >
+					<div id="error_message"></div>
+					<form  action="https://formspree.io/f/mjvpolwj" method="post" onsubmit="return validate();">
 						<div class="row gtr-uniform">
-							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name"/></div>
 							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
 							<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 							<div class="col-12">
@@ -166,6 +167,7 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="validate.js"></script>
 			<script src="assets/js/main.js"></script>
 
 	</body>
